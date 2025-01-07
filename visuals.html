@@ -41,6 +41,7 @@
 							<li><a href="americas.html">Novels Host Country in The Americas</a></li>
 							<li><a href="Visuals.html">Visuals</a></li>
 							<li><a href="index.html#team">The Team</a></li>
+							<li><a href="authors_bibliography.html">Authors List and Bibliography</a></li>
 						</ul>
 					</nav>
 
@@ -57,56 +58,48 @@
 										<li><a href="americas.html">Novels Host Country in the Americas</a></li>
 										<li class="active"><a href="visuals.html">Visuals</a></li>
 										<li><a href="index.html#team">The Team</a></li>
+										<li><a href="authors_bibliography.html">Authors List and Bibliography</a></li>
 									</ul>
 								</nav>
 								<br>
+
+
 							<!-- Authors Country -->
-							<h3>Authors Country</h3>
-							<section class="tiles-visuals">
-								<article class="style1">
-									<span class="visuals">
-										<img src="images/Authors Home Country.png" alt="" style="width: 550px; height: 500px"/>
-									</span>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/Authors Host Country.png" alt="" style="width: 550px; height: 500px"/>
-									</span>
-								</article>
-							</section>
+							<h3>Authors Visuals</h3>
+							<div class="button-container">
+								<button onclick="showDiagram(1, 'set1')">Home Country</button>
+								<button onclick="showDiagram(2, 'set1')">Host Country</button>
+								<button onclick="showDiagram(3, 'set1')">Gender</button>
+							</div>
+							<div class="diagram-container" id="set1">
+								<img src="images/Authors Home Country.png" alt="Authors Home Country" class="diagram" id="diagram1" style="display: block;">
+								<img src="images/Authors Host Country.png" alt="Authors Host Country" class="diagram" id="diagram2">
+								<img src="images/Authors Gender.png" alt="Authors Home Country" class="diagram" id="diagram3">
+
+							</div>
+
 							<br><br>
-							<!-- Authors Migration -->
-							<h3>Authors Migration</h3>
-							<section class="tiles-visuals">
-								<article class="style1">
-									<span class="visuals">
-										<img src="images/Authors Home Country.png" alt="" style="width: 550px; height: 500px"/>
-									</span>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/Authors Host Country.png" alt="" style="width: 550px; height: 500px"/>
-									</span>
-								</article>
-							</section>
+
+							<h3>Protagonists Visuals</h3>
+							<div class="button-container">
+								<button onclick="showDiagram(4, 'set2')">Home Country</button>
+								<button onclick="showDiagram(5, 'set2')">Host Country</button>
+								<button onclick="showDiagram(6, 'set2')">Language of Novel</button>
+							</div>
+							<div class="diagram-container" id="set2">
+								<img src="images/Protagonists Home Country.png" alt="Second Set Diagram 1" class="diagram" id="diagram4" style="display: block;">
+								<img src="images/Protagonists Host Country.png" alt="Second Set Diagram 2" class="diagram" id="diagram5">
+								<img src="images/Language of Novel.png" alt="Second Set Diagram 3" class="diagram" id="diagram6">
+							</div>
+							
+							<script>
+								function showDiagram(index, setId) {
+									const diagrams = document.querySelectorAll(`#${setId} .diagram`);
+									diagrams.forEach(diagram => diagram.style.display = 'none'); // Hide all diagrams in the selected set
+									document.getElementById(`diagram${index}`).style.display = 'block'; // Show the selected diagram
+								}
+							</script>
 							<br><br>
-							<!-- Authors and protagonist gender -->
-							<h3>Authors and protagonist gender</h3>
-							<section class="tiles-visuals">
-								<article class="style1">
-									<span class="visuals">
-										<img src="images/Authors Home Country.png" alt="" style="width: 550px; height: 500px"/>
-									</span>
-								</article>
-								<article class="style1">
-									<span class="image">
-										<img src="images/Authors Host Country.png" alt="" style="width: 550px; height: 500px"/>
-									</span>
-								</article>
-							</section>
-							<br><br>
-						</div>
-					</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

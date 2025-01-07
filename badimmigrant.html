@@ -41,6 +41,7 @@
 							<li><a href="americas.html">Novels Host Country in The Americas</a></li>
 							<li><a href="Visuals.html">Visuals</a></li>
 							<li><a href="index.html#team">The Team</a></li>
+							<li><a href="authors_bibliography.html">Authors List and Bibliography</a></li>
 						</ul>
 					</nav>
 
@@ -55,6 +56,7 @@
 										<li><a href="americas.html">Novels Host Country in the Americas</a></li>
 										<li><a href="visuals.html">Visuals</a></li>
 										<li><a href="index.html#team">The Team</a></li>
+										<li><a href="authors_bibliography.html">Authors List and Bibliography</a></li>
 									</ul>
 								</nav><br>
 					<section>
@@ -78,14 +80,25 @@
 										</div>
 									</div>
 								</div>
-								<div style="text-align: center;">
-									<figure style="display: inline-block; margin: 0;">
-										<figcaption style="text-align: center; font-weight: 900; margin-bottom: 5px;">
-											Mapping of the Author's Transatlantic Journey
-										</figcaption>
-										<img src="images/usa2m.jpg" width="1000px" style="display: block; margin: 0 auto;">
-									</figure>
-								</div>
+
+								<h3 style="text-align: center;">Mapping of the Transatlantic Journey</h3>
+							<div class="button-container">
+    							<button onclick="showDiagram(4, 'set1')">Author's Map</button>
+    							<button onclick="showDiagram(5, 'set1')">Protagonist's Map</button>
+							</div>
+							<div class="diagram-container" id="set1">
+    							<img src="images2/badimmigrant authors movement.jpg" alt="Second Set Diagram 1" class="diagram diagram-map" id="diagram4" style="display: block;">
+   								<img src="images/usa2m.jpg" alt="Second Set Diagram 2" class="diagram diagram-map" id="diagram5" style="display: none;">
+							</div>
+
+							<script>
+   								function showDiagram(index, setId) {
+        						const diagrams = document.querySelectorAll(`#${setId} .diagram`);
+        						diagrams.forEach(diagram => diagram.style.display = 'none'); // Hide all diagrams in the selected set
+        						document.getElementById(`diagram${index}`).style.display = 'block'; // Show the selected diagram
+    							}
+							</script>
+
 							</body>
 						</div>
 					</div>
