@@ -3904,22 +3904,10 @@ body.is-menu-visible #menu .close {
   line-height: 1.6; /* Line spacing for readability */
 }
 
-/* Left-align 5th member */
-.team-member:nth-child(5) {
-  align-self: flex-start;
-  display: flex;
-  width: 70%;
-}
-
 @media (max-width: 1250px) {
   .team-member {
     width: 100%; /* Stacks all members to full width on smaller screens */
     margin-bottom: 20px;
-  }
-
-  /* Ensure the 5th member also spans full width on small screens */
-  .team-member:nth-child(5) {
-    width: 100%; /* Override the width for small screens */
   }
 }
 
