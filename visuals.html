@@ -41,7 +41,7 @@
 							<li><a href="americas.html">Novels Host Country in The Americas</a></li>
 							<li><a href="Visuals.html">Visuals</a></li>
 							<li><a href="index.html#team">The Team</a></li>
-							<li><a href="authors_bibliography.html">Authors List and Bibliography</a></li>
+							<li><a href="authors_bibliography.html">Authors List</a></li>
 						</ul>
 					</nav>
 
@@ -58,14 +58,27 @@
 										<li><a href="americas.html">Novels Host Country in the Americas</a></li>
 										<li class="active"><a href="visuals.html">Visuals</a></li>
 										<li><a href="index.html#team">The Team</a></li>
-										<li><a href="authors_bibliography.html">Authors List and Bibliography</a></li>
+										<li><a href="authors_bibliography.html">Authors List</a></li>
 									</ul>
 								</nav>
+
+								<nav class="country-list">
+									<ul>
+										<li><a href="#A">Authors Visuals</a></li>
+										<li><a href="#B">Protagonists Visuals</a></li>
+									</ul>
+									<ul>
+										<li><a href="#C">Authors Mapping - Global</a></li>
+										<li><a href="#D">Authors Mapping - US Focused</a></li>
+										<li><a href="#E">Authors Mapping - EU Focused</a></li>
+									</ul>
+								</nav>
+								
 								<br>
 
 
 							<!-- Authors Country -->
-							<h3>Authors Visuals</h3>
+							<h3 id="A">Authors Visuals</h3>
 							<div class="button-container">
 								<button onclick="showDiagram(1, 'set1')">Home Country</button>
 								<button onclick="showDiagram(2, 'set1')">Host Country</button>
@@ -80,7 +93,7 @@
 
 							<br><br>
 
-							<h3>Protagonists Visuals</h3>
+							<h3 id="B">Protagonists Visuals</h3>
 							<div class="button-container">
 								<button onclick="showDiagram(4, 'set2')">Home Country</button>
 								<button onclick="showDiagram(5, 'set2')">Host Country</button>
@@ -91,6 +104,39 @@
 								<img src="images/Protagonists Host Country.png" alt="Second Set Diagram 2" class="diagram" id="diagram5">
 								<img src="images/Language of Novel.png" alt="Second Set Diagram 3" class="diagram" id="diagram6">
 							</div>
+
+							<br><br>
+
+							<h3 id="C">Authors Mapping - Global</h3>
+							<div class="button-container">
+								<button onclick="showDiagram(7, 'set3')">Origine Destination - Global</button>
+								<button onclick="showDiagram(8, 'set3')">Movement - Global</button>
+							</div>
+							<div class="diagram-container" id="set3">
+								<img src="images3/Origine Destination Global.png" alt="Authors Home Country" class="diagram" id="diagram7" style="display: block; width: 100%;">
+								<img src="images3/Arrow Global.png" alt="Authors Host Country" class="diagram" id="diagram8" style="width: 100%;">
+							</div>
+							<br><br>
+
+							<h3 id="D">Authors Mapping - US Focused</h3>
+							<div class="button-container">
+								<button onclick="showDiagram(9, 'set4')">Origine Destination - US Focused</button>
+								<button onclick="showDiagram(10, 'set4')">Movement - US Focused</button>
+							</div>
+							<div class="diagram-container" id="set4">
+								<img src="images3/Origine Destination US.png" alt="Authors Home Country" class="diagram" id="diagram9" style="display: block; width: 100%;">
+								<img src="images3/Arrow US.png" alt="Authors Host Country" class="diagram" id="diagram10" style="width: 100%;">
+							</div>
+							<br><br>
+
+							<h3 id="E">Authors Mapping - EU Focused</h3>
+							<div class="button-container">
+								<button onclick="showDiagram(11, 'set5')">Movement - EU Focused</button>
+							</div>
+							<div class="diagram-container" id="set5">
+								<img src="images3/Arrow EU.png" alt="Authors Home Country" class="diagram" id="diagram11" style="display: block; width: 100%;">
+							</div>
+
 							
 							<script>
 								function showDiagram(index, setId) {
