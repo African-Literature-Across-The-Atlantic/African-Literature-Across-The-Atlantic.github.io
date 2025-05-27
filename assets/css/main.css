@@ -4164,7 +4164,7 @@ body.is-menu-visible #menu .close {
   margin-top: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 950px) {
   .button-container {
     flex-direction: column;
     gap: 5px;
